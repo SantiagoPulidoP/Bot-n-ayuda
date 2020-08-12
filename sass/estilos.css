@@ -41,7 +41,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  position: relative;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -52,7 +51,6 @@ body {
 
 .same {
   position: absolute;
-  /*  left: 50%; */
   -webkit-transition: 0.7s;
   transition: 0.7s;
   cursor: pointer;
