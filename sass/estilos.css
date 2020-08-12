@@ -1,0 +1,148 @@
+body {
+  background-color: #2d1945;
+}
+
+.titleContainer {
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.titleContainer #title {
+  margin-bottom: 8%;
+}
+
+.titleContainer .subtitle {
+  position: absolute;
+  left: 50%;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  height: 100px;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  position: relative;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.same {
+  position: absolute;
+  /*  left: 50%; */
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-image: url("../images/logo.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 3;
+}
+
+.ayuda {
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  top: 0;
+  color: #2d1945;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.chat {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/chat.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50px;
+}
+
+.email {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/mail.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50px;
+  top: 15px;
+}
+
+.faq {
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/question.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50px;
+  bottom: 15px;
+}
+
+.container:hover {
+  width: 130px;
+  height: 130px;
+  border-radius: 0;
+}
+
+.container:hover .ayuda {
+  color: black;
+  border: 1px solid black;
+  top: -65px;
+  cursor: initial;
+  font-weight: bold;
+}
+
+.container:hover .chat {
+  left: -18px;
+}
+
+.container:hover .email {
+  left: -10px;
+  top: 0;
+}
+
+.container:hover .faq {
+  left: -9px;
+  bottom: 0;
+}
+/*# sourceMappingURL=estilos.css.map */

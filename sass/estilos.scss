@@ -1,0 +1,120 @@
+$containerSize: 100px;
+$aumentoContainer: 30px;
+$svgSize: 30px;
+
+body {
+  background-color: #2d1945;
+}
+.titleContainer {
+  margin-top: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #title {
+    margin-bottom: 8%;
+  }
+
+  .subtitle {
+    position: absolute;
+    left: 50%;
+    color: white;
+    font-size: 1.6rem;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+  }
+}
+.container {
+  height: $containerSize;
+  width: $containerSize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: relative;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 20px 60px;
+  transition: 0.5s;
+}
+.same {
+  position: absolute;
+  /*  left: 50%; */
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-image: url("../images/logo.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 3;
+}
+.ayuda {
+  border-radius: 5px;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  top: 0;
+  color: #2d1945;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+}
+.chat {
+  width: $svgSize;
+  height: $svgSize;
+  background-image: url("../images/chat.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50px;
+}
+.email {
+  width: $svgSize;
+  height: $svgSize;
+  background-image: url("../images/mail.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50px;
+  top: 15px;
+}
+.faq {
+  width: $svgSize;
+  height: $svgSize;
+  background-image: url("../images/question.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 50px;
+  bottom: 15px;
+}
+
+.container:hover {
+  width: $containerSize + $aumentoContainer;
+  height: $containerSize + $aumentoContainer;
+  border-radius: 0;
+  .ayuda {
+    color: black;
+    border: 1px solid black;
+    top: -65px;
+    cursor: initial;
+    font-weight: bold;
+  }
+  .chat {
+    left: -18px;
+  }
+  .email {
+    left: -10px;
+    top: 0;
+  }
+  .faq {
+    left: -9px;
+    bottom: 0;
+  }
+}
